@@ -2,11 +2,23 @@
   "name": "static-website",
   "version": "1.0.0",
   "description": "A simple static website",
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/static-website.git"
+  },
   "scripts": {
-    "start": "live-server public"
+    "start": "live-server public",
+    "build": "echo 'No build step needed for a static site'",
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {},
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "live-server": "^1.2.1",
+    "gh-pages": "^5.0.0"
+  },
+  "homepage": "https://yourusername.github.io/static-website",
+  "keywords": ["static", "website", "live-server", "frontend"]
 }
+
